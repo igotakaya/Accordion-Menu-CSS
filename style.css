@@ -1,0 +1,56 @@
+.acd-check {
+  display: none;
+}
+
+.acd-label {
+  background-color: #9410da;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+  position: relative;
+}
+
+.acd-label:after {
+  background-color: #390655;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '+';
+  display: block;
+  padding: 10px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.acd-check:checked + .acd-label:after {
+  content: '-';
+  padding: 10px 17.8px;
+}
+
+.acd-content {
+  border: 1px solid;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  height: 0;
+  opacity: 0;
+  padding: 0 .5rem;
+  position: relative;
+  top: -2px;
+  z-index: -1;
+}
+
+.acd-check:checked + .acd-label + .acd-content {
+  height: 40px;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+.acd-check:checked + .acd-label {
+  background-color: #c56cf4;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/*# sourceMappingURL=style.css.map */
